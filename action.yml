@@ -1,0 +1,12 @@
+name: 'Terraform PR'
+description: 'GitHub Action for adding `terraform plan` output as a PR comment'
+branding:
+  icon: 'package'
+  color: 'blue'
+runs:
+  using: "composite"
+  steps:
+    - name: Debug JWT Claims
+      uses: actions/github-script@v6
+      with:
+        script: |

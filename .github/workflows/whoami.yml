@@ -1,0 +1,10 @@
+on: [push]
+
+permissions:
+  id-token: write
+
+jobs:
+  whoami:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3

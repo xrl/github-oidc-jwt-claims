@@ -14,6 +14,6 @@ jobs:
           script: |
             let webIdentityToken = await core.getIDToken();
             let parsed = JSON.parse(
-              Buffer.from(token.split(".")[1], "base64").toString("utf-8")
+              Buffer.from(webIdentityToken.split(".")[1], "base64").toString("utf-8")
             );
             core.info(JSON.stringify(parsed));

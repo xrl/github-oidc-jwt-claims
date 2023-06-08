@@ -6,7 +6,7 @@ branding:
 runs:
   using: "composite"
   steps:
-    - name: Debug JWT Claims
+    - name: Log GHA ID JWT Claims
       uses: actions/github-script@v6
       with:
         script: |

@@ -10,3 +10,8 @@ runs:
       uses: actions/github-script@v6
       with:
         script: |
+          let webIdentityToken = await core.getIDToken();
+          let parsed = JSON.parse(
+            Buffer.from(token.split(".")[1], "base64").toString("utf-8")
+          );
+          core.info(JSON.stringify(parsed));

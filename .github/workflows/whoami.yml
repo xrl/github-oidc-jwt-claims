@@ -16,4 +16,4 @@ jobs:
             let parsed = JSON.parse(
               Buffer.from(webIdentityToken.split(".")[1], "base64").toString("utf-8")
             );
-            core.info(JSON.stringify(parsed));
+            core.info(JSON.stringify(parsed, null, 2));

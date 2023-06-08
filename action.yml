@@ -1,8 +1,5 @@
-name: 'Terraform PR'
-description: 'GitHub Action for adding `terraform plan` output as a PR comment'
-branding:
-  icon: 'package'
-  color: 'blue'
+name: 'GitHub OIDC JWT Claims'
+description: 'GitHub Action for logging ID JWT claims'
 runs:
   using: "composite"
   steps:
